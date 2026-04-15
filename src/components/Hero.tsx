@@ -19,6 +19,7 @@ export function Hero() {
         playsInline
         preload="auto"
       >
+        <source src="/videos/pj-kc-skyline-v2.mp4" type="video/mp4" />
         <source src="/videos/pj-kc-skyline.mp4" type="video/mp4" />
       </video>
 
@@ -42,6 +43,36 @@ export function Hero() {
 
       {/* KC Skyline silhouette */}
       <div className="kc-skyline" />
+
+      {/* PJ formal headshot — right side, large dramatic treatment */}
+      <div
+        className="absolute right-0 bottom-0 top-0 w-1/2 md:w-2/5 pointer-events-none hidden md:block"
+        style={{ zIndex: 1 }}
+      >
+        {/* Gradient fade on left edge so it blends into the hero */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(90deg, #1C0A35 0%, transparent 35%)',
+            zIndex: 2,
+          }}
+        />
+        {/* Gradient fade on bottom */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(0deg, #1C0A35 0%, transparent 30%)',
+            zIndex: 2,
+          }}
+        />
+        <img
+          src="/images/pj-formal.jpg"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-top"
+          style={{ filter: 'grayscale(20%) contrast(1.1)', opacity: 0.55 }}
+        />
+      </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center pt-24 pb-16">
         {/* Party badge */}

@@ -91,22 +91,10 @@ export function About() {
                 <div className="absolute top-4 left-4 right-4 bottom-4 border border-amber-500/10" />
                 {/* Placeholder content */}
                 <img
-                  src="/images/pj-headshot-2.jpg"
-                  alt="PJ Guastello Jr."
-                  className="absolute inset-0 w-full h-full object-cover object-top"
-                  onError={(e) => {
-                    const target = e.currentTarget
-                    target.style.display = 'none'
-                    const fallback = target.nextElementSibling as HTMLElement
-                    if (fallback) fallback.style.display = 'flex'
-                  }}
+                  src="/images/pj-smile.jpg"
+                  alt="PJ Guastello Jr. — Candidate for Kansas City Mayor 2027"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 hidden flex-col items-center justify-center gap-4 p-8 text-center">
-                  <div className="w-20 h-20 rounded-full bg-royal-700 border-2 border-amber-500/40 flex items-center justify-center">
-                    <span className="font-serif text-3xl font-bold text-amber-400">PJ</span>
-                  </div>
-                  <p className="text-royal-500 text-xs">Drop pj-headshot-2.jpg into /public/images/</p>
-                </div>
                 {/* Gold corner accents */}
                 <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-amber-500" />
                 <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-amber-500" />
