@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-ssr/
+.env
+.env.local
+.env.*.local
+.firebase/
+.firebaserc.local
+.vscode/
+.DS_Store
+*.log
+*.tsbuildinfo
