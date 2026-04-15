@@ -10,7 +10,19 @@ export function Hero() {
         background: 'linear-gradient(160deg, #1C0A35 0%, #2E1065 30%, #3B1F6B 60%, #1C0A35 100%)',
       }}
     >
-      {/* Background texture */}
+      {/* Background video (Veo-generated KC skyline clip) */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover opacity-25"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      >
+        <source src="/videos/pj-kc-skyline.mp4" type="video/mp4" />
+      </video>
+
+      {/* Background texture overlay */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
